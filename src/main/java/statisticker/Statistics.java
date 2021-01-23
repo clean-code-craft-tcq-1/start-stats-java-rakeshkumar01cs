@@ -10,7 +10,7 @@ public class Statistics
         public Float max=Float.NaN;
         public Float average=Float.NaN;
     }
-    public static Stats getStatistics(List<___> numbers) 
+    public static Stats getStatistics(List<Float> numbers) 
     {
         //implement the computation of statistics here
         Statistics.Stats s=new Stats();
