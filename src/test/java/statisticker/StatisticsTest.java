@@ -15,7 +15,7 @@ public class StatisticsTest
     public void reportsAverageMinMaxx()
     {
         Float[] numbers = {1.5f, 8.9f, 3.2f, 4.5f};
-        List<___> numberList = Arrays.asList(numbers);
+        List<Float> numberList = Arrays.asList(numbers);
 
         Statistics.Stats s = Statistics.getStatistics(numberList);
 
@@ -27,7 +27,7 @@ public class StatisticsTest
     @Test
     public void reportsNaNForEmptyInput()
     {
-        List<___> emptyList = new ArrayList<___>();
+        List<Float> emptyList = new ArrayList<>();
 
         Statistics.Stats s = Statistics.getStatistics(emptyList);
 
@@ -35,6 +35,13 @@ public class StatisticsTest
         //Float.NaN (not-a-number), as described in
         //https://www.geeksforgeeks.org/nan-not-number-java/
         //Design the asserts here and implement accordingly.
+        Assert.assertTrue(s.average.isNaN());
+        Assert.assertTrue(s.min.isNaN());
+        Assert.assertTrue(s.max.isNaN());
+        assertEquals(s.average, Float.NaN, 0.0);
+        assertEquals(s.min, Float.NaN, 0.0);
+        assertEquals(s.max, Float.NaN, 0.0);
+        
     }
     @Test
     public void reportsAlertsIfMaxIsMoreThanThreshold()
