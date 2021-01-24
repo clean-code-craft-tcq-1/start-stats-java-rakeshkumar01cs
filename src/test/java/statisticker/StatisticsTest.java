@@ -1,6 +1,7 @@
 package statisticker;
 
 import static org.junit.Assert.*;
+import org.junit.Assert;
 import jdk.nashorn.internal.AssertsEnabled;
 import java.lang.*;
 import java.util.Arrays;
