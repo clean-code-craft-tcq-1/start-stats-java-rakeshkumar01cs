@@ -44,7 +44,7 @@ public class StatisticsTest
         assertEquals(s.max, Float.NaN, 0.0);
         
     }
-  /*
+
     @Test
     public void reportsAlertsIfMaxIsMoreThanThreshold()
     {
@@ -61,6 +61,6 @@ public class StatisticsTest
         assertTrue(emailAlerter.emailSent);
         assertTrue(ledAlerter.ledGlows);
     }
-    */
+   
     
 }
