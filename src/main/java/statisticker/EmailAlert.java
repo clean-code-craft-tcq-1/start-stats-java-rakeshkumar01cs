@@ -19,7 +19,7 @@ public class EmailAlert implements IAlerter {
   
   @Override
   public void alert() {
-    System.out.println("hey i am email, sending maillll");
+     System.out.println("EmailAlert");
     emailSent=true;
   }
   
