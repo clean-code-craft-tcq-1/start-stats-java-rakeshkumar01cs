@@ -17,8 +17,8 @@ public class LEDAlert implements IAlerter {
   @Override
   public void alert() {
     // TODO Auto-generated method stub
-    System.out.println("red green yellow glowiiiiiiiing");
-  ledGlows=true;
+      System.out.println("LEDAlert");
+      ledGlows=true;
   }
 
 }
