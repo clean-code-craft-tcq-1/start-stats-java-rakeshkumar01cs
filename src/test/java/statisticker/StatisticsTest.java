@@ -23,6 +23,7 @@ public class StatisticsTest
         assertEquals(s.min, 1.2f, epsilon);
         assertEquals(s.max, 7.7f, epsilon);
     }
+    
     @Test
     public void reportsNaNForEmptyInput()
     {
